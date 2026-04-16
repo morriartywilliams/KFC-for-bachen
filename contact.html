@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us | KFC Store Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">KFC</a></div>
+            <div class="nav-links">
+                <a href="index.html#menu">Menu</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html">Find a KFC</a>
+            </div>
+            <button class="btn-red">ORDER NOW</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section-header">
+            <h2>Find Your Nearest KFC</h2>
+            <p>Ready for some Finger Lickin' Good chicken? Locate a store or get in touch.</p>
+        </section>
+
+        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;">
+            <div class="map-placeholder" style="background: #eee; border-radius: 15px; height: 400px; display: flex; align-items: center; justify-content: center; border: 2px dashed #ccc;">
+                <div style="text-align: center;">
+                    <p style="font-size: 40px;">📍</p>
+                    <p>Interactive Map Loading...<br><small>(Google Maps API Integration)</small></p>
+                </div>
+            </div>
+
+            <div class="contact-form-card" style="background: var(--card-bg); padding: 30px; border-radius: 15px;">
+                <h3>Message the Colonel</h3>
+                <form onsubmit="event.preventDefault(); alert('Message sent! We\'ll get back to you soon.');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <select style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:8px;">
+                        <option>Feedback</option>
+                        <option>Order Issue</option>
+                        <option>Catering Inquiry</option>
+                    </select>
+                    <textarea placeholder="How can we help?" style="width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:8px; height: 100px;"></textarea>
+                    <button class="btn-red block">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="font-size: 25px;">made by mohamed dhia eddin ramlia</h1>
 </body>
 </html>
