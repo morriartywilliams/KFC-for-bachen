@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>KFC | Premium Ordering Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Pay gorn</p>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">KFC</div>
+            <div class="nav-links">
+                <a href="#menu">Menu</a>
+                <a href="#deals">Deals</a>
+            </div>
+            <div class="nav-auth" id="auth-zone">
+                <button onclick="openLogin()" class="btn-text">Login</button>
+                <button class="btn-red">ORDER NOW</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <span class="badge">LIMITED TIME: THE ZINGER BOX</span>
+            <h1>Finger Lickin' <br><span class="text-red">Good. Always.</span></h1>
+            <div class="dual-cta">
+                <button class="btn-red shadow">Order Pickup</button>
+                <button class="btn-outline">View Full Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="urgency-bar">
+        <p>⚡ FLASH DEAL: Ends in <span id="timer">03:22:00</span></p>
+    </div>
+
+    <main id="menu" class="container">
+        <div class="section-header">
+            <h2>Bestsellers</h2>
+            <div class="filter-tabs">
+                <span class="active">All</span>
+                <span>Buckets</span>
+                <span>Burgers</span>
+            </div>
+        </div>
+        
+        <div class="product-grid" id="product-list">
+            </div>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h3>Welcome Back, Colonel</h3>
+            <p>Use <strong>user1</strong> / <strong>password</strong></p>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="handleLogin()" class="btn-red block">Sign In</button>
+            <button onclick="closeLogin()" class="btn-text">Cancel</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
