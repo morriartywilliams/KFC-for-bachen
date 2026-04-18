@@ -3,7 +3,7 @@ const products = [
     { id: 1, name: "The Big Bucket", price: 29.99, icon: "🍗", tag: "BESTSELLER" },
     { id: 2, name: "Burger", price: 8.49, icon: "🍔", tag: "TRENDING" },
     { id: 3, name: "Popcorn", price: 5.99, icon: "🍿", tag: "SNACK" },
-    { id: 4, name: "Family pack", price: 45.00, icon: "🧺", tag: "POPULAR" }
+    { id: 4, name: "Family pack", price: 45.00, icon: "🥙", tag: "POPULAR" }
 ];
 
 // 1. RENDER PRODUCTS
@@ -55,7 +55,7 @@ function handleLogin() {
     const pass = document.getElementById('password').value;
 
     if (user === "user1" && pass === "password") {
-        document.getElementById('auth-zone').innerHTML = `<span class="badge">Hi, Colonel!</span>`;
+        document.getElementById('auth-zone').innerHTML = `<span class="badge">Welcome Back, Prof Bachen!</span>`;
         closeLogin();
         alert("Logged in successfully! Rewards points sync'd.");
     } else {
